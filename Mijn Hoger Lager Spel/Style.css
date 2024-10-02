@@ -1,0 +1,83 @@
+.dices{
+    padding: 10px;
+    column-count: 5;
+    column-fill: balance;
+}
+.dice:hover {
+    background-color: #f0f0f0;
+}
+ 
+.headings{
+    padding: 10px;
+    column-count: 5;
+    column-fill: balance;
+}
+ 
+.credits{
+    column-count: 5;
+    column-fill: balance;
+}
+ 
+.text-center{
+    text-align: center;
+}
+ 
+.dices-computer-player{
+    column-count: 2;
+}
+ 
+.dices-player{
+    column-count: 2;
+}
+ 
+.message{
+    column-count: 3;
+    column-fill: balance;
+}
+ 
+.message-box1{
+    border: 1px solid black;
+    text-align: center;
+}
+ 
+.controls{
+    padding: 10px;
+    column-count: 6;
+    column-fill: balance;
+}
+ 
+.dice{
+    font-size: 60px;
+    margin: 20px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+}
+ 
+ 
+.message-box{
+    border: 1px solid black;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+ 
+ 
+ 
+.message-box, .message-box1 {
+    margin: 20px;
+    font-size: 18px;
+}

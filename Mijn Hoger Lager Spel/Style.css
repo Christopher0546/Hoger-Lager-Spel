@@ -81,3 +81,7 @@ button:hover {
     margin: 20px;
     font-size: 18px;
 }
+
+body{
+    background-color: aqua;
+}

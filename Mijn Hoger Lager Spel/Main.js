@@ -80,4 +80,17 @@ document.addEventListener('DOMContentLoaded', function() {
         computerCreditsElement.textContent = computerCredits;
         playerCreditsElement.textContent = playerCredits;
     }
+     // Reset functionality
+     resetButton.addEventListener('click', function() {
+        computerCredits = 0;
+        playerCredits = 0;
+        computerTotal = 0;
+        playerTotal = 0;
+        updateCredits();
+        messageElement.textContent = 'Game reset! Roll the dice!';
+        computerDiceOne.innerHTML = '';
+        computerDiceTwo.innerHTML = '';
+        playerDiceOne.innerHTML = '';
+        playerDiceTwo.innerHTML = '';
+    });
 });

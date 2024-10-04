@@ -68,7 +68,7 @@
     text-align: center;
     border: 2px solid red;
     border-radius: 10px;
-    background-color: aqua;
+    background-color: rgb(30, 255, 0);
 }
  
  
@@ -83,11 +83,9 @@ button {
 }
  
 button:hover {
-    background-color: #f80021;
+    background-color: #00f800;
     color: white;
 }
- 
- 
  
 .message-box, .message-box1 {
     margin: 20px;

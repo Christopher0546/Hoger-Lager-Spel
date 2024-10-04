@@ -1,5 +1,8 @@
+//This adds an event listener that waits for the entire HTML document to be fully loaded and parsed before executing the function. This ensures that all elements are available to interact with.
 document.addEventListener('DOMContentLoaded', function() {
+    //This selects the first dice element for the computer (the one showing one) using its class name and stores it in the computerDiceOne variable.
     const computerDiceOne = document.querySelector('.computer-dice-one');
+    //This selects the second dice element for the computer (the one showing two).
     const computerDiceTwo = document.querySelector('.computer-dice-two');
     const playerDiceOne = document.querySelector('.player-dice-one');
     const playerDiceTwo = document.querySelector('.player-dice-two');

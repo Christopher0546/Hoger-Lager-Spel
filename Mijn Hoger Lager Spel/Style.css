@@ -4,7 +4,7 @@
     column-fill: balance;
 }
 .dice:hover {
-    background-color: #f0f0f0;
+    background-color: white;
 }
  
 .headings{
@@ -17,9 +17,21 @@
     column-count: 5;
     column-fill: balance;
 }
- 
+
+.text-center1{
+    text-align: center;
+    background-color: #f80021;
+    width: max-content;
+    position: relative;
+    left: 800px;
+}
+
 .text-center{
     text-align: center;
+    background-color: #f80021;
+    width: max-content;
+    position: relative;
+    left: 100px;
 }
  
 .dices-computer-player{
@@ -36,7 +48,7 @@
 }
  
 .message-box1{
-    border: 1px solid black;
+    border: 1px solid red;
     text-align: center;
 }
  
@@ -54,14 +66,14 @@
     height: 70px;
     line-height: 70px;
     text-align: center;
-    border: 2px solid #333;
+    border: 2px solid red;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: aqua;
 }
  
  
 .message-box{
-    border: 1px solid black;
+    border: 1px solid red;
 }
 button {
     padding: 10px 20px;
@@ -71,7 +83,7 @@ button {
 }
  
 button:hover {
-    background-color: #4CAF50;
+    background-color: #f80021;
     color: white;
 }
  
@@ -82,6 +94,10 @@ button:hover {
     font-size: 18px;
 }
 
-body{
-    background-color: aqua;
-}
+body {
+    background-image: url('/Mijn\ Hoger\ Lager\ Spel/Dice.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+

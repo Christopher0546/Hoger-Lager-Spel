@@ -69,7 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (playerTotal > computerTotal) {
             playerCredits += 1;
             messageElement.textContent = 'Correct! Player wins!';
-        } else {
+        } else if(playerTotal == computerTotal){
+            playerCredits += 1;
+            computerCredits += 1;
+            messageElement.textContent = 'You Bought Win'
+        }
+        else {
             computerCredits += 1;
             messageElement.textContent = 'Wrong! Computer wins!';
         }

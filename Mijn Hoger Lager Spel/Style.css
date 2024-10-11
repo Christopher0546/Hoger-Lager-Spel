@@ -45,11 +45,14 @@
 .message{
     column-count: 3;
     column-fill: balance;
+    color: rgb(255, 0, 0);
+    text-align: center;
 }
  
 .message-box1{
     border: 1px solid red;
     text-align: center;
+    color: rgb(255, 0, 0);
 }
  
 .controls{
@@ -93,7 +96,7 @@ button:hover {
 }
 
 body {
-    background-image: url('/Mijn\ Hoger\ Lager\ Spel/Dice 1.jpg');
+    background-image: url('/Mijn\ Hoger\ Lager\ Spel/R.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;

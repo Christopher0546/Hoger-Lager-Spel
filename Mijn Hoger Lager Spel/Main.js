@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const higherButton = document.querySelector('.higher-button');
     const lowerButton = document.querySelector('.lower-button');
     const messageElement = document.querySelector('.message1');
+    const goButton = document.querySelector('.go-button')
 
     let computerCredits = 0;
     let playerCredits = 0;

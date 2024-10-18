@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Selecting elements
+
     const computerDiceOne = document.querySelector('.computer-dice-one');
     const computerDiceTwo = document.querySelector('.computer-dice-two');
     const playerDiceOne = document.querySelector('.player-dice-one');
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const higherButton = document.querySelector('.higher-button');
     const lowerButton = document.querySelector('.lower-button');
     const messageElement = document.querySelector('.message1');
-    const goButton = document.querySelector('.go-button')
+    const goButton = document.querySelector('.go-button');
 
     let computerCredits = 0;
     let playerCredits = 0;
@@ -70,6 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (playerTotal > computerTotal) {
             playerCredits += 1;
             messageElement.textContent = 'Correct! Player wins!';
+            setTimeout(() => {
+                messageElement.textContent = 'Gooi doobbelstenen';
+            }, 500);
         } else if(playerTotal == computerTotal){
             playerCredits += 1;
             computerCredits += 1;
@@ -80,12 +82,45 @@ document.addEventListener('DOMContentLoaded', function() {
             messageElement.textContent = 'Wrong! Computer wins!';
         }
         updateCredits();
+        checkGameStatus();
 
         // Enable the roll button again and disable guess buttons
         rollButton.disabled = false;
         higherButton.disabled = true;
         lowerButton.disabled = true;
     });
+
+    function resetGame(){
+        computerCredits = 0
+        playerCredits = 0
+        playerTotal = 0
+        computerTotal = 0
+        computerDiceOne.innerHTML = '';
+        computerDiceTwo.innerHTML = '';
+        playerDiceOne.innerHTML = '';
+        playerDiceTwo.innerHTML = '';
+        messageElement.textContent = 'New Game';
+        updateCredits();
+        goButton.disabled = false;
+        higherButton.disabled = true;
+        lowerButton.disabled = true;
+        rollButton.disabled = true;
+    }
+
+    function checkGameStatus(){
+        if (computerCredits == 10){
+            messageElement.textContent = 'Computer wins the game!'
+            setTimeout(() => {
+             resetGame()
+            }, 2000);
+            
+        } else if (playerCredits == 10){
+            messageElement.textContent = 'Player wins the game!'
+            setTimeout(() => {
+                resetGame()
+               }, 2000);
+    }
+    }
 
     lowerButton.addEventListener('click', function() {
         if (playerTotal < computerTotal) {
@@ -96,11 +131,19 @@ document.addEventListener('DOMContentLoaded', function() {
             messageElement.textContent = 'Wrong! Computer wins!';
         }
         updateCredits();
+        checkGameStatus();
 
         // Enable the roll button again and disable guess buttons
         rollButton.disabled = false;
         higherButton.disabled = true;
         lowerButton.disabled = true;
+    });
+
+    goButton.addEventListener('click', function() {
+        updateDice();
+        goButton.disabled = true;
+        higherButton.disabled = false;
+        lowerButton.disabled = false;
     });
 
     // Initialize the game by disabling guess buttons
@@ -109,4 +152,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial credits update
     updateCredits();
-});
+

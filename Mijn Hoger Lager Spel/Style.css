@@ -1,5 +1,5 @@
 .dices{
-    padding: 10px;
+    padding: 30px;
     column-count: 5;
     column-fill: balance;
 }
@@ -8,7 +8,7 @@
 }
  
 .headings{
-    padding: 10px;
+    padding: 30px;
     column-count: 5;
     column-fill: balance;
 }
@@ -56,7 +56,7 @@
 }
  
 .controls{
-    padding: 10px;
+    padding: 40px;
     column-count: 6;
     column-fill: balance;
 }

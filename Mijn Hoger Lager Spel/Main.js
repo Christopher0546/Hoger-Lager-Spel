@@ -112,13 +112,13 @@
             messageElement.textContent = 'Computer wins the game!'
             setTimeout(() => {
              resetGame()
-            }, 2000);
+            }, 1000);
             
         } else if (playerCredits == 10){
             messageElement.textContent = 'Player wins the game!'
             setTimeout(() => {
                 resetGame()
-               }, 2000);
+               }, 1000);
     }
     }
 

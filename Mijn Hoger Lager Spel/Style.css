@@ -20,7 +20,7 @@
 
 .text-center1{
     text-align: center;
-    background-color: #f80021;
+    background-color: #ffffff;
     width: max-content;
     position: relative;
     left: 800px;
@@ -28,7 +28,7 @@
 
 .text-center{
     text-align: center;
-    background-color: #f80021;
+    background-color: #ffffff;
     width: max-content;
     position: relative;
     left: 100px;
@@ -50,7 +50,7 @@
 }
  
 .message-box1{
-    border: 1px solid red;
+    border: 1px solid rgb(255, 255, 255);
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -76,7 +76,7 @@
  
  
 .message-box{
-    border: 1px solid red;
+    border: 1px solid rgb(255, 255, 255);
 }
 button {
     padding: 10px 20px;
